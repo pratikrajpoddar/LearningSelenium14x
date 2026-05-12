@@ -15,12 +15,12 @@ public class TestSelenium16_Mini_Project_2_Add_Extension {
     public void test_Selenium01() throws Exception {
 
         ChromeOptions chromeOptions = new ChromeOptions();
-        //chromeOptions.addArguments("--window-size=1920,1080");
+        chromeOptions.addArguments("--window-size=1920,1080");
 
         //chromeOptions.addArguments("--incognito");
 
-        File path = new File("C:\\Users\\Admin\\IdeaProjects\\LearningSeleniumATB14x\\src\\main\\java\\org\\example\\ex02_Selenium_Basics\\AdBlocker.crx");
-        chromeOptions.addExtensions(path);
+      //  File path = new File("C:\\Users\\Admin\\IdeaProjects\\LearningSeleniumATB14x\\src\\main\\java\\org\\example\\ex02_Selenium_Basics\\AdBlocker.crx");
+       // chromeOptions.addExtensions(path);
 
         WebDriver driver = new ChromeDriver(chromeOptions);
         driver.get("https://www.youtube.com/watch?v=-huANJOH0XA&list=PLfP9A3syDpt_ase07yZacWmNMwEsCgh-_&index=6");
